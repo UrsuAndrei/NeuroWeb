@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <script src="js/lib/jquery/jquery-2.1.3.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</head>
+<body>
+<div id="topBar">
+    <div class="container">
+        <div id="row">
+            <div id="col-contact">
+                <div class="list">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <p>email@email.com</p>
+                </div>
+                <div class="list">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>0321.213421</p>
+                </div>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/">
+                            <i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/"> <i class="fa fa-google-plus"></i></a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <div id="logo">
+            YourLogo
+        </div>
+
+    </div>
+</header>
+
+<div class="slider">
+    <ul>
+        <li class="mySlides">
+            <img src="img/slider/001.jpg">
+        </li>
+        <li class="mySlides">
+            <img src="img/slider/002.jpg">
+        </li>
+        <li class="mySlides">
+            <img src="img/slider/003.jpg">
+        </li>
+    </ul>
+    <button class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+    <button class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+</div>
+<footer>
+    <div class="social_footer">
+        <div class="social_f">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/">
+                        <i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/"> <i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_main">
+        <div class="fmc">
+            <div class="aboutUs">
+                <p class="title">
+                    About Us
+                </p>
+                <p class="text_content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur magna scelerisque erat dictum, et maximus tellus pulvinar. In hac habitasse platea dictumst. Donec quis quam eu odio fermentum eleifend. Morbi nec magna mi. Suspendisse malesuada turpis ut finibus pretium. Nam gravida, arcu ac iaculis interdum, orci enim dictum urna, in commodo ligula leo at nisl. Donec in elementum augue. Vestibulum consequat est nibh, sed molestie nulla viverra sit amet. Pellentesque eleifend vestibulum dui, pulvinar varius urna venenatis non. Maecenas porttitor mi sit amet posuere iaculis. Donec eleifend arcu sapien, ac sagittis nunc ultricies vitae. Cras consectetur porta orci, quis porttitor neque hendrerit at.
+                </p>
+            </div>
+            <div>
+                <p class="title">
+                    some text
+                </p>
+                <p class="text_content">
+                    In sed nibh tempor, volutpat ipsum volutpat, eleifend elit. Etiam et nunc feugiat erat vestibulum lacinia. Cras efficitur nunc quis lectus tincidunt, ut tincidunt lacus luctus. Praesent vehicula at nunc ut venenatis. Fusce vehicula dolor a dignissim commodo. Aliquam euismod blandit turpis, a vehicula neque varius et. Fusce tincidunt tortor metus, iaculis vulputate arcu tincidunt eu. Sed tempus feugiat ante. Morbi mollis iaculis nunc, at molestie velit consequat non. Morbi eu mi rutrum risus euismod hendrerit id id nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum et libero et sapien iaculis facilisis. Donec venenatis mattis mi, vel laoreet neque ornare sed.
+                </p>
+            </div>
+            <div id="contact">
+                <p class="title">
+                    Contact
+                </p>
+                <span>
+                    <ul>
+                        <li>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p> Str. Republicii nr. 7</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>0342.4213213</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <p>email@email.com</p>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        Copyright © 2017. All Rights Reserved.
+    </div>
+
+</footer>
+<script>
+    $(document).ready(function(){
+        var slideWidth = $('.slider ul li').width();
+        var timer= setInterval(function () {
+            moveRight();
+        }, 5000);
+        $('.slider ul li:last-child').prependTo('.slider ul');
+
+        function moveLeft() {
+            $('.slider ul').animate({
+                left: + slideWidth
+            }, 300, function () {
+                $('.slider ul li:last-child').prependTo('.slider ul');
+                $('.slider ul').css('left', '');
+            });
+        }
+        function moveRight() {
+            $('.slider ul').animate({
+                left: - slideWidth
+            }, 300, function () {
+                $('.slider ul li:first-child').appendTo('.slider ul');
+                $('.slider ul').css('left', '');
+            });
+        }
+        $('.prev').click(function () {
+            moveLeft();
+            clearInterval(timer);
+            timer= setInterval(function () {
+                moveRight();
+            }, 5000);
+        });
+
+        $('.next').click(function () {
+            moveRight();
+            clearInterval(timer);
+            timer= setInterval(function () {
+                moveRight();
+            }, 5000);
+        });
+        $('.social a').click(function(){
+            window.open(this.href);
+            return false;
+        });
+    });
+</script>
+</body>
+</html>
