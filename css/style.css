@@ -54,6 +54,7 @@ a:active,a:visited,a:hover{
     color: white;
 }
 .social a{
+    color: white;
     display: inline-block;
     border-radius: 50%;
     width: 33px;
@@ -61,6 +62,7 @@ a:active,a:visited,a:hover{
     text-align: center;
     vertical-align: middle;
     transition: 1s;
+
 }
 a i{
     display: table;
@@ -275,4 +277,7 @@ footer{
 }
 #contact li>p{
     color:#b9b9b9;
+}
+.social_f ul li a{
+    color: white;
 }
